@@ -74,6 +74,7 @@ if __name__ == "__main__":
             sys_argv_i_var = sys.argv[i]
             if sys_argv_i_var == '-s' or sys_argv_i_var == '-search':
                 i += 1
+                sys_argv_i_var = sys.argv[i]
                 #var_search_for = []
                 loc_var = sys_argv_i_var.split(',')
 
@@ -86,6 +87,7 @@ if __name__ == "__main__":
                     elif loc_argument == 'verbs':
                         var_function.append(search_bot.is_verb_in_txt)
                         i += 1
+                        sys_argv_i_var = sys.argv[i]
                         search_bot.var_modify_search = sys_argv_i_var.split(',')
 
 
